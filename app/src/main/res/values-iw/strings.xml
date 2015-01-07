@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">תפריט איתחול 6thGear</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_title">תפריט איתחול של 6ThGear</string>
+    <string name="ok">אתחל כעת</string>
+    <string name="cancel">ביטול</string>
+    <string-array name="reboot_items">
+        <item>איתחול</item>
+        <item>איתחול מהיר</item>
+        <item>איתחול למצב Recovery</item>
+        <item>איתחול למצב Download</item>
+        <item>אתחל את SystemUI</item>
+        
+    </string-array>
+
+</resources>

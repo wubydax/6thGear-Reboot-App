@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">6thGear Reboot</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_title">6thGear Reboot Options</string>
+    <string name="ok">Reboot now</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="reboot_items">
+        <item>Reboot</item>
+        <item>Hot Reboot</item>
+        <item>Recovery Mode</item>
+        <item>Download Mode</item>
+        <item>Reboot SystemUI</item>
+
+    </string-array>
+
+</resources>
