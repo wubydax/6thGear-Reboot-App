@@ -29,6 +29,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PowerManager;
+import android.view.ContextThemeWrapper;
+
 import java.io.DataOutputStream;
 import java.io.IOException;
 
@@ -43,13 +45,13 @@ PowerManager pm;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        AlertDialog.Builder builder = new AlertDialog.Builder(new ContextThemeWrapper(getActivity(), R.style.AppTheme));
         //Using PowerManager interface for reboot as system app
         pm = (PowerManager) getActivity().getSystemService(getActivity().POWER_SERVICE);
 
         //Creating Dialog Builder
         builder.setTitle(R.string.dialog_title)
-                .setIcon(R.drawable.ic_reboot)
+                .setIcon(R.mipmap.ic_launcher)
 
                 .setSingleChoiceItems(R.array.reboot_items, 0, new DialogInterface.OnClickListener() {
                     @Override

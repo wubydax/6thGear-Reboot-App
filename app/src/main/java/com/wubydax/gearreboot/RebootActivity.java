@@ -21,20 +21,22 @@ package com.wubydax.gearreboot;
  * SOFTWARE.
  */
 
+import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
 /**
  * @author anna
  */
-public class RebootActivity extends ActionBarActivity {
+public class RebootActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        DialogRebootFragment newFragment = new DialogRebootFragment();
-        newFragment.show(getFragmentManager(), "reboot");
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        ft.add(new DialogRebootFragment(), "reboot").commitAllowingStateLoss();
 
 
 
