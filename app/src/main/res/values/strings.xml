@@ -14,7 +14,7 @@
         <item>Recovery Mode</item>
         <item>Download Mode</item>
         <item>Reboot SystemUI</item>
-
+        <item>Turn off device</item>
     </string-array>
 
 </resources>
