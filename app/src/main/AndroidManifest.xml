@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.REBOOT" />
     <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
     <uses-permission android:name="android.permission.DEVICE_POWER" />
-
+    <uses-permission android:name="android.permission.SHUTDOWN" />
     <uses-permission android:name="android.permission.RECOVERY" />
 
     <application
