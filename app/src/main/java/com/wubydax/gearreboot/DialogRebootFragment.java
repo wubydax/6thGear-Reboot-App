@@ -83,7 +83,7 @@ PowerManager pm;
                     //Using gearKill method to terminate SystemUI process
                     gearKill("com.android.systemui");
                 }else if (selectedPosition == 5) {
-                    //Using gearKill method to terminate SystemUI process
+                    //Using permission SHUTDOWM to request GlobalAction power off prompt
                     Intent i = new Intent("android.intent.action.ACTION_REQUEST_SHUTDOWN");
                     i.putExtra("android.intent.extra.KEY_CONFIRM", true);
                     startActivity(i);
